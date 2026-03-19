@@ -1,10 +1,11 @@
 import { View, Text, StyleSheet, Pressable, TextInput, Linking} from "react-native";
+import { FontAwesome6 } from '@expo/vector-icons';
 
 export default function LoginPage(){
     return(
         <View style={styles.Container}> 
             <View style={styles.ContainerLogo}>
-                <Text>Logo aqui!!!</Text>
+                <FontAwesome6 name="leaf" size={64} color="#10b981" />
                 <Text style={styles.Tittle}>Bem-vindo ao EasyFlow</Text>
                 <Text style={styles.SubTittle}>Faça login ou cadastre-se para continuar</Text> 
             </View> 
@@ -26,7 +27,7 @@ export default function LoginPage(){
 const styles = StyleSheet.create({
     Container: {
         flex: 1,
-        padding: 16,
+        
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#F0F9FF',
@@ -45,13 +46,16 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-end',
     },
     Tittle: {
-        fontSize: 24,
+        fontFamily: 'Inter',
+        fontSize: 28,
         fontWeight: 'bold',
         color: '#6366F1',
 
     },
     SubTittle: {
-        fontSize: 14,
+        fontFamily: 'Inter',
+        fontSize: 15,
+        color: '#64748B',
     },
     ItensAtributs: {
         width: '100%',
