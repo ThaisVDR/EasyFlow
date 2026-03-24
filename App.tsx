@@ -1,20 +1,26 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import LoginPage from './src/screens/LoginPage';
+import { useEffect, useState } from "react";
+import * as Font from "expo-font";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    async function loadFonts() {
+      await Font.loadAsync({
+        Inter: require("./src/fonts/Inter-VariableFont_opsz,wght.ttf"),
+      });
+      setLoaded(true);
+    }
+
+    loadFonts();
+  }, []);
+
+  if (!loaded) {
+    return null;
+  }
+  return <LoginPage/>;
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
