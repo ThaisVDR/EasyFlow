@@ -35,10 +35,10 @@ export default function LoginPage({ navigation }: any) {
           onPress={() => navigation.navigate("FlashCards")}
         />
       </View>
-      <Text style={styles.SubTittle}>
-        Não tem uma conta?{" "}
-        <AddLink text="cadastre-se" url="https://www.google.com" />
-      </Text>
+      <View style={AuthStyles.footer}>
+        <Text style={styles.SubTittle}>Não tem uma conta? </Text>
+        <AuthLink text="Cadastre-se" onPress={()=> navigation.navigate("Cadastro")}/>
+      </View>
       <View style={AuthStyles.footer}>
         <Text style={AuthStyles.linkSubtitle}>Esqueci minha senha</Text>
         <AuthLink 
@@ -78,6 +78,7 @@ const styles = StyleSheet.create({
     color: "#6366F1",
   },
   SubTittle: {
+    marginVertical: 0,
     fontFamily: "Inter",
     fontSize: 15,
     color: "#64748B",
