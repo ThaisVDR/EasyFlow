@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@expo/vector-icons": "^14.0.3",
     "@react-navigation/native": "6.1.18",
     "@react-navigation/native-stack": "6.11.0",
@@ -26,6 +27,19 @@
     "metro-config": "^0.80.12",
     "metro-resolver": "^0.80.12",
     "typescript": "~5.3.3"
+=======
+    "@expo/vector-icons": "^15.0.2",
+    "expo": "~55.0.7",
+    "expo-status-bar": "~55.0.4",
+    "react": "19.2.0",
+    "react-native": "0.83.2",
+    "react-native-safe-area-context": "^5.7.0",
+    "react-native-screens": "^4.24.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.2",
+    "typescript": "~5.9.2"
+>>>>>>> 013ed75f253b783c18393282afa482789b1c2840
   },
   "private": true
 }

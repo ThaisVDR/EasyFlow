@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from "react";
 import * as Font from "expo-font";
 import { NavigationContainer } from "@react-navigation/native";
@@ -39,3 +40,31 @@ export default function App() {
     </NavigationContainer>
   );
 }
+=======
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+import LoginPage from './src/screens/LoginPage';
+import { useEffect, useState } from "react";
+import * as Font from "expo-font";
+
+export default function App() {
+    const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    async function loadFonts() {
+      await Font.loadAsync({
+        Inter: require("./src/fonts/Inter-VariableFont_opsz,wght.ttf"),
+      });
+      setLoaded(true);
+    }
+
+    loadFonts();
+  }, []);
+
+  if (!loaded) {
+    return null;
+  }
+  return <LoginPage/>;
+}
+
+>>>>>>> 013ed75f253b783c18393282afa482789b1c2840

@@ -7,6 +7,10 @@ node_modules/
 .expo/
 dist/
 web-build/
+<<<<<<< HEAD
+=======
+expo-env.d.ts
+>>>>>>> 013ed75f253b783c18393282afa482789b1c2840
 
 # Native
 .kotlin/
