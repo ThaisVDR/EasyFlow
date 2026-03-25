@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useEffect, useState } from "react";
 import * as Font from "expo-font";
 import { NavigationContainer } from "@react-navigation/native";
@@ -7,6 +6,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import LoginPage from "./src/screens/LoginPage";
 import FlashCardPage from "./src/screens/FlashCardPage";
 import LeituraPage from "./src/screens/LeituraPage";
+import ForgotPasswordPage from "./src/screens/Forgot_Reset_Password/ForgotPassword";
+import ResetPasswordPage from "./src/screens/Forgot_Reset_Password/ResetPasswordPage";
 
 const Stack = createNativeStackNavigator();
 
@@ -33,38 +34,12 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="Login" component={LoginPage} />
+         <Stack.Screen name="Login" component={LoginPage} />
         <Stack.Screen name="FlashCards" component={FlashCardPage} />
-        <Stack.Screen name="Leitura" component={LeituraPage} />
+        <Stack.Screen name="Leitura" component={LeituraPage} /> 
+        <Stack.Screen name="ForgotPassword" component={ForgotPasswordPage} /> 
+        <Stack.Screen name="ResetPassword" component={ResetPasswordPage} />
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
-=======
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import LoginPage from './src/screens/LoginPage';
-import { useEffect, useState } from "react";
-import * as Font from "expo-font";
-
-export default function App() {
-    const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    async function loadFonts() {
-      await Font.loadAsync({
-        Inter: require("./src/fonts/Inter-VariableFont_opsz,wght.ttf"),
-      });
-      setLoaded(true);
-    }
-
-    loadFonts();
-  }, []);
-
-  if (!loaded) {
-    return null;
-  }
-  return <LoginPage/>;
-}
-
->>>>>>> 013ed75f253b783c18393282afa482789b1c2840

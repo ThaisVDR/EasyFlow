@@ -11,6 +11,8 @@ import InputTexto from "../components/InputTexto";
 import ButtonProp from "../components/button";
 import AddLink from "../components/addLink";
 import FlashCardPage from "./FlashCardPage";
+import AuthLink from "../components/authComponents/authLink";
+import { AuthStyles } from "../components/authComponents/authStyles";
 
 export default function LoginPage({ navigation }: any) {
   return (
@@ -33,11 +35,19 @@ export default function LoginPage({ navigation }: any) {
           onPress={() => navigation.navigate("FlashCards")}
         />
       </View>
-      <Text>
+      <Text style={styles.SubTittle}>
         Não tem uma conta?{" "}
         <AddLink text="cadastre-se" url="https://www.google.com" />
       </Text>
+      <View style={AuthStyles.footer}>
+        <Text style={AuthStyles.linkSubtitle}>Esqueci minha senha</Text>
+        <AuthLink 
+          text="recuperar" 
+          onPress={() => navigation.navigate("ForgotPassword")}      
+        />
+      </View>
     </View>
+    
   );
 }
 
