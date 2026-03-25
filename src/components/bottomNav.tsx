@@ -8,7 +8,7 @@ export default function BottomNav() {
   const route = useRoute();
 
   const tabs = [
-    { name: "Resumo", icon: "home-outline", screen: "Login" },
+    { name: "Resumo", icon: "home-outline", screen: "" },
     { name: "Calendário", icon: "calendar-outline", screen: "" },
     { name: "Leitura", icon: "book-outline", screen: "Leitura" },
     { name: "Revisão", icon: "copy-outline", screen: "FlashCards" },
