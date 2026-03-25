@@ -2,6 +2,8 @@ import React from "react";
 import { View } from "react-native";
 import { AuthStyles } from "../../components/authComponents/authStyles";
 import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { RootStackParamList } from "../../types/navigation";
 
 import ButtonProp from "../../components/button";
 import AuthHeader from "../../components/authComponents/authHeader";
@@ -13,7 +15,7 @@ import AuthLink from "../../components/authComponents/authLink";
 
 export default function ResetPasswordPage() {
   const [reset, setReset] = React.useState<"reset" | "successReset">("reset");
-  const navigation = useNavigation();
+  const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
   return (
     <AuthContainer>
       {reset === "reset" ? (
