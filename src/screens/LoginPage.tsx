@@ -28,7 +28,7 @@ export default function LoginPage({ navigation }: any) {
         <Text style={styles.InfoFormat}>Email</Text>
         <InputTexto placeholder="meuemail@gmail.com" />
         <Text style={styles.InfoFormat}>Senha</Text>
-        <InputTexto placeholder="Digite sua senha" />
+        <InputTexto placeholder="Digite sua senha" secureTextEntry={true} />
 
         <ButtonProp
           txt="Enviar"
