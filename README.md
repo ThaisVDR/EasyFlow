@@ -21,24 +21,18 @@ Aplicativo focado em facilitar a vida acadêmica oferecendo ferramentas de organ
 
 * Entrada com e-mail e senha
 * Botões de acesso ao cadastro e recuperação de senha
-* Validação simples para autenticação do usuário
-
 ---
 
 ### 2️⃣ **Tela de Cadastro**
 
 * Formulário para criar nova conta
-* Campos: nome, e-mail, senha e confirmação de senha
-* Mensagens de erro e validações básicas
-* Redirecionamento para a tela de login após cadastro concluído
-
+* Campos: nome, e-mail, senha e confirmação de senha.
 ---
 
 ### 3️⃣ **Tela de Esqueceu a Senha**
 
 * Campo para solicitar redefinição de senha
 * Envio de instruções de recuperação via e-mail
-* Feedback visual ao usuário
 
 ---
 
@@ -46,8 +40,7 @@ Aplicativo focado em facilitar a vida acadêmica oferecendo ferramentas de organ
 
 * Criação de flashcards personalizados
 * Frente: pergunta/conteúdo
-* Verso: resposta (mostrada apenas quando clicado)
-* Registro das matérias com maior índice de erro
+* Verso: resposta
 
 ---
 
@@ -62,16 +55,3 @@ Aplicativo focado em facilitar a vida acadêmica oferecendo ferramentas de organ
 ## 🎯 Público-Alvo
 
 **Estudantes acadêmicos** que buscam melhorar organização e desempenho nos estudos.
-
----
-
-## ✨ Diferenciais
-
-* Acompanhamento de leitura integrado
-* Ambiente de estudo intuitivo
-* Ferramentas de produtividade centralizadas
-* Design simples e agradável
-
----
-
-Se quiser, posso gerar uma **versão ainda mais estilizada**, com badges, emojis, links internos, ou até imagens das telas quando você tiver! 🚀
