@@ -36,7 +36,7 @@ Aplicativo focado em facilitar a vida acadêmica oferecendo ferramentas de organ
 
 ---
 
-### 6️⃣ **Tela de Flashcards**
+### 4️⃣ **Tela de Flashcards**
 
 * Criação de flashcards personalizados
 * Frente: pergunta/conteúdo
@@ -44,7 +44,7 @@ Aplicativo focado em facilitar a vida acadêmica oferecendo ferramentas de organ
 
 ---
 
-### 7️⃣ **Tela de Leitura / PDF Viewer**
+### 5️⃣ **Tela de Leitura / PDF Viewer**
 
 * Importação e visualização de PDFs
 * Ferramentas de marcação
