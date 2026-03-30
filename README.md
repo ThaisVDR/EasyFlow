@@ -26,14 +26,12 @@ Aplicativo focado em facilitar a vida acadêmica oferecendo ferramentas de organ
 ### 2° **Tela de Cadastro**
 
 * Formulário para criar nova conta
-* Campos: nome, e-mail, senha e confirmação de senha.
+* Campos: nome, e-mail, senha.
 ---
 
 ### 3° **Tela de Esqueceu a Senha**
 
 * Campo para solicitar redefinição de senha
-* Envio de instruções de recuperação via e-mail
-
 ---
 
 ### 4° **Tela de Flashcards**
