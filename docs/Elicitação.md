@@ -5,7 +5,7 @@
 **Projeto:** Easy Flow
 
 **Grupo:** CodeTech
- 1. Arthur Passareli Moretti - QA (Quality Assurance) / Tester;
+ 1. Arthur Passareli Moretti - QA (Quality Assurance) / DBA;
  2. João Vitor da Silva Costa - Dev Back-end/API;
  3. Luiz Antônio Martins Garcia Filho - Dev Front-end;
  4. Thaís Vitória Dias Rosa - Líder Técnico / UX/UI Designer;
